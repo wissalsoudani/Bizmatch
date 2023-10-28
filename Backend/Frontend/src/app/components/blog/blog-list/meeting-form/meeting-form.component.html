@@ -1,0 +1,53 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{buttonText}} Reunion</h4>
+    <button type="button" class="close" aria-label="Close" (click)="dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="reunionName">Reunion Name</label>
+            <input id="reunionName" class="form-control" [(ngModel)]="reunion.reunionName" name="reunionName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="meetLink">Meeting Link</label>
+            <input id="meetLink" class="form-control" [(ngModel)]="reunion.meetLink" name="meetLink" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reunionSubject">Reunion Subject</label>
+            <input id="reunionSubject" class="form-control" [(ngModel)]="reunion.reunionSubject" name="reunionSubject" required>
+        </div>
+
+        <div class="form-group">
+            <label for="startTime">Start Time</label>
+            <input type="datetime-local" id="startTime" class="form-control" [(ngModel)]="reunion.startTime" name="startTime" required>
+        </div>
+
+        <div class="form-group">
+            <label for="endTime">End Time</label>
+            <input type="datetime-local" id="endTime" class="form-control" [(ngModel)]="reunion.endTime" name="endTime" required>
+        </div>
+
+        <div class="form-group">
+            <label for="entreprise1">Entreprise 1</label>
+            <select id="entreprise1" class="form-control" [(ngModel)]="entreprise1" name="entreprise1" required>
+                <option *ngFor="let enterprise of enterprises" [ngValue]="enterprise">{{enterprise.nom}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="entreprise2">Entreprise 2</label>
+            <select id="entreprise2" class="form-control" [(ngModel)]="entreprise2" name="entreprise2" required>
+                <option *ngFor="let enterprise of enterprises" [ngValue]="enterprise">{{enterprise.nom}}</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">{{buttonText}}</button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="dismiss()">Close</button>
+</div>

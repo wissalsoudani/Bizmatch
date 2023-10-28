@@ -1,0 +1,77 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="breadcrumb-list">
+            <nav aria-label="breadcrumb" class="page-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="routes.home">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Pages</li>
+                <li class="breadcrumb-item" aria-current="page">
+                  Bookings
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Blog Grid -->
+<section class="course-content">
+    <div class="container">
+        <div class="tak-instruct-group">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="settings-widget">
+                        <div class="settings-inner-blk p-0">
+                            <div class="sell-course-head student-meet-head comman-space border-0">
+                                <div class="tak-head d-flex align-items-center">
+                                    <div>
+                                        <h3>Bookings</h3>
+                                       
+                                    </div>
+                                    <div class="view-icons">
+                                        <a [routerLink]="routes.instructor_student_grid" class="grid-view active"><i-feather name="grid"></i-feather></a>
+                                   
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <table class="booking-table">
+            <thead>
+              <tr> 
+                <th>Booking Date</th>
+                 
+                <th>Event</th>
+                <th>User</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let booking of bookings; let odd = odd" [class.odd-row]="odd">
+            
+                <td>{{ booking.bookingDate  | date: 'dd MMMM yyyy'}}</td>
+                   
+                <td>{{ booking.event.eventName }}</td>
+                <td>{{email}}</td>
+                <td>         <button class="btn btn-primary" (click)="delete(booking.bookingId)" style="margin-left: 30px;">Cancel</button>     
+                </td> 
+              </tr>
+            </tbody>
+          </table>
+                        </div>
+                    </div>
+               
+             
+        
+            
+        
+         
+        </div>
+     
+</section>
+<!-- /Blog Grid -->

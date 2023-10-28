@@ -1,0 +1,19 @@
+.header {
+  background-color: #191970;
+  color: #0a142f; /* Dark blue for text */
+  padding: 20px 0;
+}
+
+.page-title {
+  color: lavender;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* Remove any default margin */
+}
+
+#map {
+  background-color: #191970;
+  height: 500px;
+}

@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="col-md-4 d-flex">
+        <div class="card instructor-card w-100">
+            <div class="card-body">
+                <div class="instructor-inner">
+                    <h6>Total Objectives</h6>
+                    <h4 class="instructor-text-success">100</h4>
+                    <p>Over the year 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex">
+        <div class="card instructor-card w-100">
+            <div class="card-body">
+                <div class="instructor-inner">
+                    <h6>Objectives dones</h6>
+                    <h4 class="instructor-text-info">1</h4>
+                    <p>Added by Projetct Managers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+            <div class="settings-inner-blk p-0">
+                <div class="sell-course-head comman-space">
+                    <h3>List of Objectives</h3>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                 
+                        <button class="btn btn-success" style="margin: 10px auto;"
+                        (click)="onExportPdf()">
+                            Generate PDF
+                        </button>
+                    </div>
+                
+                    <div style="display: flex; justify-content: space-between; align-items: center;" >  
+                    
+                    <table class="table table-light" id="tableFourn">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Type</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let f of objectif | paginate : { itemsPerPage: tableSize, currentPage: page,totalItems: count };let i = index">
+                               
+                                <td>{{f.name_objectif}}</td>
+                                <td>{{f.descr_objectif}}</td>
+                                <td>{{f.type_objectif}}</td>
+                                <td>{{f.date_debut_objectif}}</td>
+                                <td>{{f.date_fin_objectif}}</td>
+                                <td>{{f.status_objectif}}</td>
+                                <td>
+                                    <button class="btn btn-warning" style="margin-right: 5px;"
+                                    [routerLink]="['/instructor/instructor-security',f.id_objectif]">Edit
+                                    </button>
+                
+                                    <button class="btn btn-danger"
+                                    >Delete
+                                    </button>
+                
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-warning" style="margin-right: 5px;"
+                                    [routerLink]="['/instructor/instructor-orders']">Add New
+                                    </button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        
+        <pagination-controls 
+    previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)" >
+</pagination-controls>
+<router-outlet></router-outlet>
+

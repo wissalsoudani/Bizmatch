@@ -1,0 +1,17 @@
+<!-- Main Wrapper -->
+<div
+  class="main-wrapper"
+  [ngClass]="{
+    'menu-opened': showMiniSidebar == true
+  }"
+>
+   <!-- <app-header *ngIf="isuserHeader == true"></app-header>
+ <app-admin-header *ngIf="isAdminHeader"></app-admin-header>
+  <app-student-header *ngIf="isstudentHeader == true"></app-student-header>-->
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+  <div>
+    <app-footer *ngIf="mainFooter"></app-footer>
+  </div>
+</div>

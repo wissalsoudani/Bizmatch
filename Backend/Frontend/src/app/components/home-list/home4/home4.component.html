@@ -1,0 +1,611 @@
+<app-header></app-header>
+			<!-- Home Banner -->
+			<section class="home-slide-five">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-12">
+							<div class="home-slide-five-face" data-aos="fade-down">
+
+								<!-- Banner Text -->
+								<div class="home-slide-five-text">
+									<h5>BIZMATCH</h5>
+									<h1>Plateforme de Networking et de Développement Commercial B2B N°1</h1>
+
+								</div>
+								<!-- /Banner Text -->
+
+								<!-- banner Seach Category -->
+								<div class="banner-content-five">
+									<form class="form"  action="course-list.html">
+										<div class="form-inner-five">
+											<div class="input-group">
+												<!-- Slect Category -->
+												<span class="drop-detail-five">
+
+												</span>
+												<!-- Slect Category -->
+
+												<!-- Search -->
+												<input type="email" class="form-control" placeholder="Search School, Online eductional centers, etc">
+												<!-- Search -->
+
+												<!-- Submit Button -->
+												<button class="btn btn-primary sub-btn" type="submit" (click)="directPath()"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+												<!-- Submit Button -->
+											</div>
+										</div>
+									</form>
+								</div>
+								<!-- /banner Seach Category -->
+
+								<!-- Review and Experience -->
+								<div class="review-five-group">
+									<div class="review-user-five  d-flex align-items-center">
+										<ul class="review-users-list">
+											<li>
+												<a routerLink="javascript:;"><img tooltip="leader 1" placement="top" src="assets/img/profiles/avatar-01.jpg" alt="img"></a>
+											</li>
+											<li>
+												<a routerLink="javascript:;" ><img  tooltip="leader 2" placement="top" src="assets/img/profiles/avatar-02.jpg" alt="img"></a>
+											</li>
+											<li>
+												<a routerLink="javascript:;" ><img  tooltip="leader 3" placement="top" src="assets/img/profiles/avatar-03.jpg" alt="img"></a>
+											</li>
+											<li>
+												<a routerLink="javascript:;" ><img  tooltip="leader 4" placement="top" src="assets/img/profiles/avatar-04.jpg" alt="img"></a>
+											</li>
+										</ul>
+										<div class="review-rating-five">
+											<div class="rating-star">
+												<p>5.5</p>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+												<i class="fas fa-star filled"></i>
+											</div>
+										</div>
+									</div>
+									<!-- Experience -->
+									<div class="rate-head-five d-flex align-items-center course-count">
+										<h2><span [countUp]="10" [options]="{ enableScrollSpy: true }">0</span>+</h2>
+										<p>Years of experience buisness professionals</p>
+									</div>
+									<!-- /Experience -->
+								</div>
+								<!-- /Review and Experience -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="banner-slider-img">
+								<div class="row">
+									<div class="col-lg-6 align-self-end">
+										<div class="slider-five-one" data-aos="fade-down">
+											<img src="assets/img/2.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="slider-five-two aos" data-aos="fade-down">
+											<img src="assets/img/3.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="vector-shapes-five">
+						<img src="assets/img/bg/banner-vector.svg" alt="">
+					</div>
+				</div>
+			</section>
+			<!-- /Home Banner -->
+            			<!-- Leading Companies -->
+			<section class="leading-section-five"  data-aos="fade-down">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-4 col-md-6">
+							<div class="leading-five-content course-count">
+								<h2>Trusted By <span [countUp]="500" [options]="{ enableScrollSpy: true }">0</span>+</h2>
+								<p>Leading Buisnesses and collaborators</p>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-6" >
+							<div class="lead-group-five">
+                                <owl-carousel-o [options]="leadingOption" class="leading-slider-five">
+                                    <ng-container >
+                                        <ng-template carouselSlide >
+                                            <div class="lead-img">
+                                                <img class="img-fluid" alt="" src="assets/img/client/client-01.svg">
+                                            </div>
+                                        </ng-template>
+                                        <ng-template carouselSlide >
+                                            <div class="lead-img">
+                                                <img class="img-fluid" alt="" src="assets/img/client/client-02.svg">
+                                            </div>
+                                        </ng-template>
+                                        <ng-template carouselSlide >
+                                            <div class="lead-img">
+                                                <img class="img-fluid" alt="" src="assets/img/client/client-03.svg">
+                                            </div>
+                                        </ng-template>
+                                        <ng-template carouselSlide >
+                                            <div class="lead-img">
+                                                <img class="img-fluid" alt="" src="assets/img/client/client-04.svg">
+                                            </div>
+                                        </ng-template>
+                                        <ng-template carouselSlide >
+                                            <div class="lead-img">
+                                                <img class="img-fluid" alt="" src="assets/img/client/client-05.svg">
+                                            </div>
+                                        </ng-template>
+
+                                    </ng-container>
+                                </owl-carousel-o>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /Leading Companies -->
+
+			<!-- Course Categories Five -->
+			<section class="course-section-five">
+				<div class="container">
+					<div class="header-five-title text-center" data-aos="fade-down">
+						<h2>Our offered services</h2>
+						<p>Pick Your Favourite </p>
+					</div>
+          <owl-carousel-o [options]="courseOption" class="leading-slider-five">
+            <ng-container>
+                <ng-template carouselSlide>
+                    <div class="lead-img">
+                        <div class="carousel-five-item" data-aos="fade-down">
+                            <div class="service-five-item">
+                                <div class="service-five-grid">
+                                    <div class="service-icon-five">
+                                        <div class="icon-five-border">
+                                                <i class="fas fa-briefcase"></i>
+
+                                        </div>
+                                    </div>
+                                    <div class="service-info-five">
+                                            <h3>Business Consulting</h3>
+                                            <p>Expert Advice for Business Growth</p>
+
+                                    </div>
+                                    <div class="service-info-btn">
+                                        <a  class="btn-five"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="lead-img">
+                        <div class="carousel-five-item" data-aos="fade-down">
+                            <div class="service-five-item">
+                                <div class="service-five-grid">
+                                    <div class="service-icon-five">
+                                        <div class="icon-five-border">
+                                                <i class="fas fa-chart-line"></i>
+
+                                        </div>
+                                    </div>
+                                    <div class="service-info-five">
+                                            <h3>Marketing Solutions</h3>
+                                            <p>Boost Your Brand's Visibility</p>
+
+                                    </div>
+                                    <div class="service-info-btn">
+                                        <a  class="btn-five"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <!-- Add more ng-template carouselSlide blocks for additional services -->
+            </ng-container>
+        </owl-carousel-o>
+
+				</div>
+			</section>
+			<!-- /Course Categories Five-->
+
+      <section class="experienced-course-five">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-down">
+                    <div class="experienced-five-group">
+                        <div class="instructor-vector-left">
+                            <img src="assets/img/bg/instructor-vector-left.svg" alt="">
+                        </div>
+                        <div class="developer-five-list">
+                            <ul>
+                                <li class="column-img">
+                                    <div class="developer-profile-five">
+                                        <div class="developer-image">
+                                            <img src="assets/img/profiles/profile-01.png" alt="Service Expert">
+                                        </div>
+                                        <div class="profile-five-ovelay">
+                                            <h5>John Doe</h5>
+                                            <p>Business Strategy Expert</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Add more experts as needed -->
+                            </ul>
+                        </div>
+                        <div class="instructor-vector-right">
+                            <img src="assets/img/bg/instructor-vector-right.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-down">
+                    <div class="experienced-five-sub">
+                        <div class="header-five-title header-five-title-inner">
+                            <h2 class="ex-five-title">Expert B2B Consultants</h2>
+                        </div>
+                        <div class="career-five-content">
+                            <p class="ex-five-content">
+                                Connect with industry-leading B2B experts to drive growth, optimize operations, and maximize profits. Our consultants have a track record of helping businesses like yours succeed.
+                            </p>
+                        </div>
+                        <a href="#" class="learn-more-five">Connect with Experts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="master-section-five">
+      <div class="container">
+          <div class="master-five-vector">
+              <img class="ellipse-right" src="assets/img/bg/master-vector-left.svg" alt="">
+          </div>
+          <div class="row">
+              <div class="col-lg-6 col-sm-12" data-aos="fade-down">
+                  <div class="section-five-sub">
+                      <div class="header-five-title">
+                          <h2>Optimize Business Interactions with Effective Planning</h2>
+                          <p>Streamline Meetings for Success</p>
+                      </div>
+                      <div class="career-five-content">
+                          <p data-aos="fade-down">
+                              La planification et la gestion des réunions sont essentielles pour faciliter les interactions commerciales.
+                          </p>
+                      </div>
+                      <a href="#" class="learn-more-five">Learn More</a>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                  <div class="row">
+                      <div class="col-lg-6 col-sm-6" data-aos="fade-down">
+                          <div class="skill-five-item">
+                              <div class="skill-five-icon">
+                                  <img src="assets/img/skills/skills-01.svg" class="bg-warning" alt="Stay motivated">
+                              </div>
+                              <div class="skill-five-content">
+                                  <h3>Facilitate Productive Meetings</h3>
+                                  <p>Optimize your team's interactions with effective meeting planning and management.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-6" data-aos="fade-down">
+                          <div class="skill-five-item">
+                              <div class="skill-five-icon">
+                                  <img src="assets/img/skills/skills-02.svg" class="bg-info" alt="Stay motivated">
+                              </div>
+                              <div class="skill-five-content">
+                                  <h3>Enhance Business Communication</h3>
+                                  <p>Improve communication channels to foster successful business interactions.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-6" data-aos="fade-down">
+                          <div class="skill-five-item">
+                              <div class="skill-five-icon">
+                                  <img src="assets/img/skills/skills-03.svg" class="bg-danger" alt="Stay motivated">
+                              </div>
+                              <div class="skill-five-content">
+                                  <h3>Implement Effective Meeting Strategies</h3>
+                                  <p>Learn how to plan and execute meetings that drive business success.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-6" data-aos="fade-down">
+                          <div class="skill-five-item">
+                              <div class="skill-five-icon">
+                                  <img src="assets/img/skills/skills-04.svg" class="bg-light-green" alt="Stay motivated">
+                              </div>
+                              <div class="skill-five-content">
+                                  <h3>Adapt to Dynamic Business Environments</h3>
+                                  <p>Equip your team with the skills to thrive in ever-changing business landscapes.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+			<!-- /Master the skills Five -->
+
+		<!-- Experienced Course Five -->
+<section class="experienced-course-five bb-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-down">
+        <div class="experienced-five-group">
+          <div class="instructor-vector-left">
+            <i class="bb-icon bb-icon-profile"></i>
+          </div>
+          <div class="developer-five-list">
+            <ul>
+              <!-- Replace img tags with icons -->
+              <li class="column-img">
+                <div class="developer-profile-five">
+                  <i class="bb-icon bb-icon-profile"></i>
+                  <div class="profile-five-ovelay">
+                    <h5>Daziy Millar</h5>
+                    <p>PHP Expert</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Repeat for other profiles -->
+            </ul>
+          </div>
+          <div class="instructor-vector-right">
+            <i class="bb-icon bb-icon-profile"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-down">
+        <div class="experienced-five-sub">
+          <div class="header-five-title header-five-title-inner">
+            <h2 class="ex-five-title">Experienced Course Instructor</h2>
+          </div>
+          <div class="career-five-content">
+            <p class="ex-five-content">Get certified, master modern tech skills, and level up your career — whether you’re starting out or a seasoned pro. 95% . Get certified, master modern tech skills, and level up your career — whether you’re starting out or a seasoned pro. 95% of eLearning learners report our hands-on content directly helped their careers.</p>
+          </div>
+          <a [routerLink]="routes.instructor_list" class="learn-more-five">Start Learning</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Experienced Course Five -->
+
+<!-- Share your knowledge -->
+<section class="share-knowledge-five bb-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down">
+        <div class="section-five-sub">
+          <div class="header-five-title">
+            <h2>Want to share your knowledge? Join us a Mentor</h2>
+          </div>
+          <div class="career-five-content">
+            <p>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.While there is no standardized meaning for high-definition, generally any video.</p>
+          </div>
+          <div class="knowledge-list-five">
+            <ul>
+              <li>
+                <div class="knowledge-list-group">
+                  <i class="bb-icon bb-icon-award"></i>
+                  <p>Best Markets</p>
+                </div>
+              </li>
+              <li class="mb-0">
+                <div class="knowledge-list-group">
+                  <i class="bb-icon bb-icon-award"></i>
+                  <p>Best Companies</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a [routerLink]="routes.page_course_list" class="learn-more-five">Connect with us Today</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down">
+        <div class="joing-count-five text-center">
+          <i class="bb-icon bb-icon-joing-us-skill"></i>
+          <div class="joing-count-five-one course-count">
+            <h3 class="joing-count-number"><span [countUp]="5500" [options]="{ enableScrollSpy: true }">5,500</span>K<span>+</span></h3>
+            <p class="joing-count-text"></p>
+          </div>
+          <!-- Repeat for other counts -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Share your knowledge -->
+<!-- Experienced Course Five -->
+<section class="experienced-course-five">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-down">
+              <div class="experienced-five-group">
+                  <div class="instructor-vector-left">
+                      <img src="assets/img/icon/business-icon.svg" alt="">
+                  </div>
+                  <div class="developer-five-list">
+                      <ul>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-01.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Marc Dupont</h5>
+                                      <p>Customer Relations Expert</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-02.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Alice Moreau</h5>
+                                      <p>Partnership Manager</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-03.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Jean Leclerc</h5>
+                                      <p>Prospect Relations Specialist</p>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="instructor-vector-right">
+                      <img src="assets/img/icon/business-icon.svg" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-down">
+              <div class="experienced-five-sub">
+                  <div class="header-five-title header-five-title-inner">
+                      <h2 class="ex-five-title">Meet Our Expert Team</h2>
+                  </div>
+                  <div class="career-five-content">
+                      <p class="ex-five-content">La gestion efficace des relations avec les clients, partenaires et prospects contribue à la croissance et à la fidélisation des entreprises.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Experienced Course Five -->
+<!-- Experienced Course Five -->
+<section class="experienced-course-five">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-down">
+              <div class="experienced-five-group">
+                  <div class="instructor-vector-left">
+                      <img src="assets/img/icon/business-icon.svg" alt="">
+                  </div>
+                  <div class="developer-five-list">
+                      <ul>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-01.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Marc Dupont</h5>
+                                      <p>Innovative Learning Expert</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-02.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Alice Moreau</h5>
+                                      <p>Partnership Innovator</p>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="column-img">
+                              <div class="developer-profile-five">
+                                  <div class="developer-image">
+                                      <img src="assets/img/profiles/profile-03.png" alt="Course Instructor">
+                                  </div>
+                                  <div class="profile-five-ovelay">
+                                      <h5>Jean Leclerc</h5>
+                                      <p>Prospect Relations Visionary</p>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="instructor-vector-right">
+                      <img src="assets/img/icon/business-icon.svg" alt="">
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-down">
+              <div class="experienced-five-sub">
+                  <div class="header-five-title header-five-title-inner">
+                      <h2 class="ex-five-title">Meet Our Innovators</h2>
+                  </div>
+                  <div class="career-five-content">
+                      <p class="ex-five-content">Effective management of client, partner, and prospect relationships leads to business growth and loyalty.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Experienced Course Five -->
+
+<!-- Share your knowledge -->
+<section class="share-knowledge-five">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down">
+              <div class="section-five-sub">
+                  <div class="header-five-title">
+                      <h2>Ready to Transform Learning? Join BB Learning as an Innovator</h2>
+                  </div>
+                  <div class="career-five-content">
+                      <p>High-definition video is of superior resolution and quality compared to standard definition. While there's no standardized meaning for high definition, generally, any video...</p>
+                  </div>
+                  <div class="knowledge-list-five">
+                      <ul>
+                          <li>
+                              <div class="knowledge-list-group">
+                                  <img src="assets/img/icon/award-new.svg" alt="">
+                                  <p>Best-in-Class Courses</p>
+                              </div>
+                          </li>
+                          <li class="mb-0">
+                              <div class="knowledge-list-group">
+                                  <img src="assets/img/icon/award-new.svg" alt="">
+                                  <p>Learn Anytime, Anywhere</p>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down">
+              <div class="joing-count-five text-center">
+                  <img src="assets/img/joing-us-skill.png" alt="">
+                  <div class="joing-count-five-one course-count">
+                      <h3 class="joing-count-number"><span [countUp]="100" [options]="{ enableScrollSpy: true }">0</span></h3>
+                      <p class="joing-count-text">Markets</p>
+                  </div>
+                  <div class="joing-count-five-two course-count">
+                      <h3 class="joing-count-number"><span [countUp]="55" [options]="{ enableScrollSpy: true }">0</span>K<span>+</span></h3>
+                      <p class="joing-count-text">Meetings</p>
+                  </div>
+                  <div class="joing-count-five-three course-count">
+                      <h3 class="joing-count-number"><span [countUp]="50" [options]="{ enableScrollSpy: true }">0</span>K<span>+</span></h3>
+                      <p class="joing-count-text">Innovations</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- /Share your knowledge -->
+
+
+			<app-footer></app-footer>

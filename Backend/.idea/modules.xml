@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CRM/CRM.iml" filepath="$PROJECT_DIR$/CRM/CRM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Nouveau dossier.iml" filepath="$PROJECT_DIR$/.idea/Nouveau dossier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrestationServices/PrestationServices.iml" filepath="$PROJECT_DIR$/PrestationServices/PrestationServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Relations/Relations.iml" filepath="$PROJECT_DIR$/Relations/Relations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway-service/api-gateway-service.iml" filepath="$PROJECT_DIR$/api-gateway-service/api-gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/authentification-service/authentification-service.iml" filepath="$PROJECT_DIR$/authentification-service/authentification-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/besoins-service/besoins-service.iml" filepath="$PROJECT_DIR$/besoins-service/besoins-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/business-server/business-server.iml" filepath="$PROJECT_DIR$/business-server/business-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-service/event-service.iml" filepath="$PROJECT_DIR$/event-service/event-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestionMarche/gestionMarche.iml" filepath="$PROJECT_DIR$/gestionMarche/gestionMarche.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reunion-service/reunion-service.iml" filepath="$PROJECT_DIR$/reunion-service/reunion-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

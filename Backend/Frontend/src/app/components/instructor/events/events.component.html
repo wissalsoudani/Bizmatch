@@ -1,0 +1,61 @@
+<div class="tak-instruct-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="settings-widget">
+                <div class="settings-inner-blk p-0">
+                    <div class="sell-course-head student-meet-head comman-space border-0">
+                        <div class="tak-head d-flex align-items-center">
+                            <div>
+                                <h3>Events && Conferences</h3>
+                               
+                            </div>
+                            <div class="view-icons">
+                                <button class="btn btn-primary" (click)="addEvent()">New</button> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 d-flex" *ngFor="let data of events" style="margin-left: 20px;">
+            <div class="student-box flex-fill">
+                <div class="student-box-blks">
+                    <div class="message-text-img">
+                      
+                    </div>
+                    <div class="media-img-wrap flex-shrink-0">
+                        <div class="img-fluid">
+                             <img  
+                            src="assets/img/{{data.image}}"
+                          />
+                        </div>
+                    </div>
+                    <div class="student-content pb-0">
+                        <h5><a>{{data.eventName}}</a></h5><h1>{{data.typeEvent}}</h1>
+                        <div class="loc-blk d-flex align-items-center justify-content-center">
+                            <i-feather name="map-pin" class="me-2 feather-map"></i-feather>
+                            <p>{{data.eventLocation}} </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="enrol-student-foot">
+                    <ul>
+                        <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-22.svg" alt="">{{ data.eventDate | date: 'dd MMMM yyyy' }}
+
+                        </li>
+                        <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-23.svg" alt="">{{data.eventCapacity}}
+                        </li>
+                        <li><p>Remaining </p>{{data.remainingPlaces}}</li>
+                         
+                        <li>   <button class="btn btn-primary" (click)="updateEvent(data)" style="margin-left: 30px;">Edit</button> 
+                            <button class="btn btn-primary" (click)="delete(data.eventId)" style="margin-left: 30px;">cancel</button>      </li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+ 

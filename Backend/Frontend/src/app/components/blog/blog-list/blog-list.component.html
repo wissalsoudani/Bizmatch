@@ -1,0 +1,71 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="breadcrumb-list">
+            <nav aria-label="breadcrumb" class="page-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="routes.home">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Pages</li>
+                <li class="breadcrumb-item" aria-current="page">
+                Meetings
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Blog Grid -->
+<section class="course-content">
+    <div class="container"><div class="tak-instruct-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="settings-widget">
+                <div class="settings-inner-blk p-0">
+                    <div class="sell-course-head student-meet-head comman-space border-0">
+                        <div class="tak-head d-flex align-items-center">
+                            <div>
+                                <h3>Meetings</h3>
+                               
+                            </div>
+                            <div class="view-icons">
+                                <button class="btn btn-primary" (click)="addMeeting()">New</button> 
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+<table class="reunion-table">
+    <thead>
+      <tr>
+      
+        <th>Reunion Name</th>
+        <th>Reunion Date</th>
+        <th>Meet Link</th> 
+        <th>Enterprise 1</th>
+        <th>Enterprise 2</th>
+      <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let reunion of reunions; let odd = odd" [class.odd-row]="odd">
+         <td>{{ reunion.reunionName }}: <br>{{ reunion.reunionSubject }}</td>
+        <td>{{ reunion.reunionDate | date: 'dd MMMM yyyy' }}</td>
+        <td>{{ reunion.meetLink }}</td>
+        <td>{{ reunion.entreprise1.nom}}</td>
+        <td>{{ reunion.entreprise2.nom }}</td>
+
+         <td>          <button class="btn btn-primary" (click)="updateMeeting(reunion)" style="margin: 30px;">Edit</button> 
+                             <button class="btn btn-primary" (click)="delete(reunion.reunionId)" style="margin-left: 30px;">Archive</button>     
+         </td>
+      </tr>
+    </tbody>
+  </table>
+   
+          </div>
+            </div>
+    </div></section>

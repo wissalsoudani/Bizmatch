@@ -1,0 +1,67 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="breadcrumb-list">
+            <nav aria-label="breadcrumb" class="page-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a [routerLink]="routes.home">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">Pages</li>
+                <li class="breadcrumb-item" aria-current="page">
+            Events
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Blog Grid -->
+<section class="course-content">
+    <div class="container">
+        <div class="row masonry-blog-blk">
+            <div class="col-lg-4 col-md-6" *ngFor="let event of events">
+
+                 
+
+                <!-- Blog Post -->
+                <div class="blog grid-blog" style="background-color: #191970;">
+                    <div class="blog-image">
+                        <a [routerLink]="[routes.blog_details, event.eventId]"><img class="img-fluid"    
+                            src="assets/img/{{event.image}}"
+                          
+                                alt="Post Image"></a>
+                    </div>
+                    <div class="blog-grid-box masonry-box" style="background-color: #e6e6fa;">
+                        <div class="blog-info clearfix">
+                            <div class="post-left">
+                                <ul>
+                                    <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-22.svg" alt="">{{event.eventDate| date: 'dd MMMM yyyy' }}
+                                    </li>
+                                    <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-23.svg" alt="">{{event.eventLocation}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3 class="blog-title"> <a [routerLink]="[routes.blog_details, event.eventId]"> {{event.eventName}}</a></h3>
+                        <div class="blog-content blog-read">
+                            <p>Remaining spots:   {{event.remainingPlaces}}</p>
+                            <button class="btn btn-primary" [routerLink]="['/blog/blog-masonry/event-details', event.eventId]"  style="display: block; margin: 0 auto;">Read More</button>
+                        
+
+                        </div><br>
+                    </div><br><br>
+                </div>
+                <!-- /Blog Post -->
+
+            </div>
+        </div>
+        <!-- Load button -->
+        <div class="load-more text-center">
+            <a href="javascript:;" class="btn btn-primary">Load More</a>
+        </div>
+        <!-- /Load button -->
+    </div>
+</section>
+<!-- /Blog Grid -->

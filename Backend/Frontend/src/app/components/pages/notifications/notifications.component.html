@@ -1,0 +1,50 @@
+<!-- Notification -->
+<section class="course-content">
+    <div class="container">
+        <div class="title-sec">
+            <div class="row">
+                <div class="col-sm-6 col-lg-5">
+                    <h2>Invitations</h2>
+                    <p>Partners Request</p>
+                </div>
+                <div class="col-sm-6 col-lg-7">
+                    <div class="text-end">
+                        <a href="javascript:;" class="btn btn-mark" (click)="acceptAll()">Accept all</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications List for Today -->
+        <div class="notify-sec">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Today</h5>
+                    <div class="notify-item" *ngFor="let connexion of connexions">
+                        <div class="row align-items-center">
+                            <div class="col-md-9">
+                                <div class="notify-content">
+                                    <a [routerLink]="routes.instructor_instructor_profile">
+                                        <img class="avatar-img semirounded-circle" [alt]="connexion.entrepriseA.nom">
+                                    </a>
+                                    <div class="notify-detail">
+                                        <h6><a [routerLink]="routes.instructor_instructor_profile">{{connexion.entrepriseA.nom}}</a><span>{{connexion.etat}}</span></h6>
+                                        <p>{{connexion.entrepriseA.secteur}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-md-end">
+                                    <a href="javascript:;" class="btn btn-accept" (click)="accept(connexion)">Accept</a>
+                                    <a href="javascript:;" class="btn btn-delete" (click)="refuse(connexion)">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Notifications List for Today -->
+    </div>
+</section>
+<!-- /Notification -->

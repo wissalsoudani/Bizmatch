@@ -1,0 +1,6 @@
+
+n	java:S116"TRename this field "id_besoin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ùÊûüÿÿÿÿ
+p	java:S116"VRename this field "name_besoin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ú©÷ÿÿÿÿÿ
+q	java:S116"WRename this field "descr_besoin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿðŒãøÿÿÿÿ
+l	java:S116"XRename this field "status_besoin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñœÈ?
+v	java:S116"\Rename this field "date_ajout_besoin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×‰ýýøÿÿÿÿ

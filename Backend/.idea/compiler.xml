@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="business-server" />
+        <module name="besoins-service" />
+        <module name="authentification-service" />
+        <module name="Relations" />
+        <module name="user-service" />
+        <module name="gestionMarche" />
+        <module name="discovery-server" />
+        <module name="event-service" />
+        <module name="api-gateway-service" />
+        <module name="reunion-service" />
+        <module name="PrestationServices" />
+        <module name="CRM" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway-service" target="11" />
+      <module name="authentification-service" target="11" />
+      <module name="besoins-service" target="1.8" />
+      <module name="business-server" target="1.8" />
+      <module name="calendar-service" target="1.8" />
+      <module name="calendrier-service" target="1.8" />
+      <module name="conference-service" target="1.8" />
+      <module name="CRM" target="1.8" />
+      <module name="discovery-server" target="11" />
+      <module name="event-service" target="11" />
+      <module name="gestionMarche" target="1.8" />
+      <module name="GestionReclamationMicroservice" target="11" />
+      <module name="PartenariatPromotion" target="11" />
+      <module name="PrestationServices" target="11" />
+      <module name="Relations" target="11" />
+      <module name="reunion-service" target="11" />
+      <module name="user-service" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CRM" options="-parameters" />
+      <module name="GestionReclamationMicroservice" options="-parameters" />
+      <module name="PartenariatPromotion" options="-parameters" />
+      <module name="PrestationServices" options="-parameters" />
+      <module name="Relations" options="-parameters" />
+      <module name="api-gateway-service" options="-parameters" />
+      <module name="authentification-service" options="-parameters" />
+      <module name="besoins-service" options="-parameters" />
+      <module name="business-server" options="-parameters" />
+      <module name="calendar-service" options="-parameters" />
+      <module name="calendrier-service" options="-parameters" />
+      <module name="conference-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="event-service" options="-parameters" />
+      <module name="gestionMarche" options="-parameters" />
+      <module name="reunion-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

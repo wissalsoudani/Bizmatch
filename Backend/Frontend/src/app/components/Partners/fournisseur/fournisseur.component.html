@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="row">
+        <div class="col-md-12">
+            
+            <div class="row">
+                <div class="card" class="text-center">
+                    <table class="table">
+                        <thead style="background-color: rgb(192, 183, 183);">
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor='let p of listFournisseurs'>
+                                <td>{{p.title}}</td>
+                                <td>{{p.price}}</td>
+                                <td>{{p.quantity}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

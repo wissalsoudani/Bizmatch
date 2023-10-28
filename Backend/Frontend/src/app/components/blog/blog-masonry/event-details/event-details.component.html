@@ -1,0 +1,45 @@
+<!-- Blog Details -->
+<section class="course-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+
+                <!-- Blog Post -->
+                <div class="blog">
+                    <div class="blog-image">
+                     
+                        <img class="img-fluid" src="assets/img/{{ event.image }}" alt="Post Image"  style="width: 300px;display: block; margin: 0 auto;">
+
+                          
+                                
+                    </div>
+                    <div class="blog-info clearfix">
+                        <div class="post-left">
+                            <ul>
+                                <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-22.svg" alt="">{{event.eventDate| date: 'dd MMMM yyyy' }}
+                                </li>
+                                <li><img class="img-fluid" src="./../../../../assets/img/icon/icon-23.svg" alt="">{{event.eventLocation}}
+                                </li>
+                                <li>    <button class="btn btn-primary" (click)="addEventBooking(event.eventId)" style="margin-left: 30px;">Book now !!!</button>    
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="blog-title"> {{event.eventName}}</h3>
+                    <div class="blog-content">
+                        <h4>Description :</h4><br><p>{{event.description}}</p> <br>
+                        <h4>Capacity :</h4><br><p>{{event.eventCapacity}}</p> <br>
+                        <h4>Remaining Places :</h4><br><p>{{event.remainingPlaces}}</p> <br>
+                        <h4>Type :</h4><br><p>{{event.typeEvent}}</p> <br>
+                        <h4>Speakers :</h4><br><p>{{event.speakers}}</p> <br>
+                        
+                    </div>
+                </div>
+                <!-- /Blog Post -->
+
+            </div>
+ 
+        </div>
+    </div>
+</section>
+<!-- /Blog Details -->

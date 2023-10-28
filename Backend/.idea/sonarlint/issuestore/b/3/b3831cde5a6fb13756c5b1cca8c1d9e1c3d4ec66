@@ -1,0 +1,11 @@
+
+k	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔáÓ¶ûÿÿÿÿ
+k	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³“‰Äøÿÿÿÿ
+¨
+java:S4449;"ŒAnnotate the parameter with @javax.annotation.Nullable in method 'delete' declaration, or make sure that null can not be passed as argument.(óõ´Øùÿÿÿÿ
+E
+java:S1874R"/Remove this use of "getById"; it is deprecated.(Ìéÿı
+\
+java:S1128	":Remove this unused import 'tn.esprit.entities.Entreprise'.(¡ó¢®ûÿÿÿÿ8Éíë¿µ1
+d
+java:S1128"HRemove this unused import 'tn.esprit.repositories.EntrepriseRepository'.(·­Ì8Éíë¿µ1

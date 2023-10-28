@@ -1,0 +1,132 @@
+
+
+    <!-- Page Wrapper -->
+<div class="page-content instructor-page-content" style="background-color: #E6E6FA">
+    <div class="container">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+                <div class="stickybar">
+                    <div class="settings-widget dash-profile">
+                        <div class="settings-menu p-0">
+                            <div class="profile-bg">
+
+                                <img  >
+
+                            </div>
+                            <div class="profile-group">
+                                <div class="profile-name text-center">
+                                    <h4><a>{{user.email}}</a><h1>{{user.job}}</h1></h4>
+                            <p>{{user.job}}</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="settings-widget account-settings">
+                        <div class="settings-menu">
+                            <ng-container >
+                                <div >
+                                    <a [routerLink]="routes.instructor_student_grid" class="grid-view active"><i-feather name="grid"></i-feather>Users</a>
+
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </ng-container>
+                        </div><br>
+                        <div class="settings-menu">
+                            <ng-container >
+                                <div >
+                                    <a [routerLink]="routes.events" class="grid-view active"><i-feather name="grid"></i-feather>Events & Conferences</a>
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </ng-container>
+                        </div><br>
+                        <div class="settings-menu">
+                            <ng-container >
+                                <div >
+                                    <a routerLink="meetings" class="grid-view active"><i-feather name="grid"></i-feather>Meetings</a>
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </ng-container>
+                        </div>
+                        <br>
+                        <div class="settings-menu">
+                            <ng-container >
+                                <div >
+                                    <a routerLink="bookings" class="grid-view active"><i-feather name="grid"></i-feather>Bookings</a>
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </ng-container>
+                        </div>
+                        <br>
+                        <div class="settings-menu">
+                            <ng-container >
+                                <div >
+                                    <a routerLink="eventsArchive" class="grid-view active"><i-feather name="grid"></i-feather>Archive</a>
+                                </div>
+                                <ul>
+
+                                </ul>
+                            </ng-container>
+                        </div><br>
+                        <div class="settings-menu">
+                          <ng-container>
+                            <div>
+                              <a routerLink="marche-admin" class="grid-view active"
+                                ><i-feather name="grid"></i-feather>Marche</a
+                              >
+                            </div>
+                            <ul></ul>
+                          </ng-container>
+                        </div><br>
+                        <div class="settings-menu">
+                          <ng-container>
+                            <div>
+                              <a routerLink="instructor-dashboard" class="grid-view active"
+                                ><i-feather name="grid"></i-feather>Needs</a
+                              >
+                            </div>
+                            <ul></ul>
+                          </ng-container>
+                        </div><br>
+                        <div class="settings-menu">
+                          <ng-container>
+                            <div>
+                              <a routerLink="instructor-tickets" class="grid-view active"
+                                ><i-feather name="grid"></i-feather>Objectifs</a
+                              >
+                            </div>
+                            <ul></ul>
+                          </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Sidebar -->
+
+            <!-- Instructor Content -->
+            <div class="col-xl-9 col-lg-8 col-md-12" >
+                <router-outlet></router-outlet>
+            </div>
+            <!-- /Instructor Content -->
+
+
+        </div>
+    </div>
+</div>
+<!-- /Page Wrapper -->
+
+
+
+<ng-container *ngIf="!instructor">
+    <router-outlet></router-outlet>
+</ng-container>

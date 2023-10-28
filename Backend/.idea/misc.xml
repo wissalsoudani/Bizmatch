@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/event-service/pom.xml" />
+        <option value="$PROJECT_DIR$/reunion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/calendar-service/pom.xml" />
+        <option value="$PROJECT_DIR$/discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/conference-service/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Relations/pom.xml" />
+        <option value="$PROJECT_DIR$/Reclamation/GestionReclamationMicroservice/pom.xml" />
+        <option value="$PROJECT_DIR$/PrestationServices/pom.xml" />
+        <option value="$PROJECT_DIR$/gestionMarche/pom.xml" />
+        <option value="$PROJECT_DIR$/CRM/pom.xml" />
+        <option value="$PROJECT_DIR$/business-server/pom.xml" />
+        <option value="$PROJECT_DIR$/besoins-service/pom.xml" />
+        <option value="$PROJECT_DIR$/authentification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

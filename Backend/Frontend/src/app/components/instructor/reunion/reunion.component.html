@@ -1,0 +1,48 @@
+<div class="tak-instruct-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="settings-widget">
+                <div class="settings-inner-blk p-0">
+                    <div class="sell-course-head student-meet-head comman-space border-0">
+                        <div class="tak-head d-flex align-items-center">
+                            <div>
+                                <h3>Meetings</h3>
+                               
+                            </div>
+                            <div class="view-icons">
+                                <a [routerLink]="routes.instructor_student_grid" class="grid-view active"><i-feather name="grid"></i-feather></a>
+                           
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+<table class="reunion-table">
+    <thead>
+      <tr>
+      
+        <th>Reunion Name</th>
+        <th>Reunion Date</th>
+        <th>Meet Link</th> 
+        <th>Enterprise 1</th>
+        <th>Enterprise 2</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let reunion of reunions; let odd = odd" [class.odd-row]="odd">
+         <td>{{ reunion.reunionName }}: <br>{{ reunion.reunionSubject }}</td>
+        <td>{{ reunion.reunionDate | date: 'dd MMMM yyyy' }}</td>
+        <td>{{ reunion.meetLink }}</td>
+      
+        <td>{{ reunion.entreprise1.nom}}</td>
+        <td>{{ reunion.entreprise2.nom }}</td>
+         
+      </tr>
+    </tbody>
+  </table>
+          </div>
+            </div>
+         

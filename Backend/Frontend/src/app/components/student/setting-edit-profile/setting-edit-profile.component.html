@@ -1,0 +1,92 @@
+<br><br><div class="settings-widget profile-details">
+    <div class="settings-menu p-0">
+      <div class="profile-bg">
+        <h5>GUEST</h5>
+
+        <div class="profile-img">
+            <a [routerLink]="routes.students_profile"><img src="./../../../../assets/img/user-fer.png" alt=""></a>
+        </div>
+    </div>
+        <div class="profile-heading">
+            <h3>Add Company</h3>
+            <p>Please complete the form below to add a company to this site.</p>
+        </div>
+        <div class="course-group mb-0 d-flex">
+            <div class="course-group-img d-flex align-items-center">
+                <a [routerLink]="routes.students_profile"><img src="assets/img/students/entreprise.jpeg" alt="" class="img-fluid"></a>
+                <div class="course-name">
+                    <h4><a [routerLink]="routes.students_profile">Your avatar</a></h4>
+                    <p>PNG or JPG no bigger than 800px wide and tall.</p>
+                </div>
+            </div>
+            <div class="profile-share d-flex align-items-center justify-content-center">
+                <a href="javascript:;" class="btn btn-success">Update</a>
+                <a href="javascript:;" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+        <div class="checkout-form personal-address add-course-info ">
+            <div class="personal-info-head">
+                <h4>Company Details</h4>
+                <p>Add your company information and address.</p>
+            </div>
+            <form [formGroup]="companyForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Name</label>
+                            <input formControlName="nom"  type="text" class="form-control" id="nom" placeholder="Enter your company's Name">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Sector</label>
+                            <input formControlName="secteur" type="text" class="form-control" id="secteur" placeholder="Enter your sector">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Phone</label>
+                            <input formControlName="telephone" type="text" id="telephone" class="form-control" placeholder="Enter your Phone">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Description</label>
+                            <input formControlName="description" type="text" id="description" class="form-control" placeholder="Enter your Description" style="font-size: 16px; color: #999;">
+                        </div>
+                    </div>
+                  <!--   <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Birthday</label>
+                            <input type="text" class="form-control" placeholder="Birth of Date">
+                        </div>
+                    </div> -->
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label  class="form-label">Country</label>
+                            <mat-select class="form-select select country-select"  [(value)]="selected">
+                                <mat-option value="option1">Select country</mat-option>
+                                <mat-option value="option2">India</mat-option>
+                                <mat-option value="option3">America</mat-option>
+                                <mat-option value="option4">London</mat-option>
+                                <mat-option value="option4">Tunisia</mat-option>
+                            </mat-select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label class="form-control-label">Address </label>
+                            <input formControlName="adresse" type="text" id="adresse" class="form-control" placeholder="Address">
+                        </div>
+                    </div>
+
+
+
+                    <div class="update-profile">
+                        <button type="submit" class="btn btn-primary">Add Profile</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

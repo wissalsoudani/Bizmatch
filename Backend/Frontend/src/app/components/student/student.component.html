@@ -1,0 +1,27 @@
+
+<ng-container *ngIf="student">
+    <!-- Page Wrapper -->
+<div class="page-content instructor-page-content">
+    <div class="container">
+        <div class="row">
+
+
+            <!-- /Sidebar -->
+
+            <!-- Instructor Content -->
+            <div class="col-xl-9 col-md-8" >
+                <router-outlet></router-outlet>
+            </div>
+            <!-- /Instructor Content -->
+
+
+        </div>
+    </div>
+</div>
+<!-- /Page Wrapper -->
+
+</ng-container>
+
+<ng-container *ngIf="!student">
+    <router-outlet></router-outlet>
+</ng-container>

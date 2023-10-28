@@ -1,0 +1,48 @@
+<div class="tak-instruct-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="settings-widget">
+                <div class="settings-inner-blk p-0">
+                    <div class="sell-course-head student-meet-head comman-space border-0">
+                        <div class="tak-head d-flex align-items-center">
+                            <div>
+                                <h3>Events && Conferences</h3>
+                               
+                            </div>
+                            <div class="view-icons">
+                                <a [routerLink]="routes.instructor_student_grid" class="grid-view active"><i-feather name="grid"></i-feather></a>
+                           
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+<table class="booking-table">
+    <thead>
+      <tr> 
+        <th>Booking Date</th>
+         
+        <th>Event</th>
+        <th>User</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings; let odd = odd" [class.odd-row]="odd">
+    
+        <td>{{ booking.bookingDate  | date: 'dd MMMM yyyy'}}</td>
+           
+        <td>{{ booking.event.eventName }}</td>
+        <td>{{ booking.user.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+                </div>
+            </div>
+       
+     
+
+    
+
+ 

@@ -1,0 +1,104 @@
+<div class="row">
+    <div class="col-md-4 d-flex">
+        <div class="card instructor-card w-100">
+            <div class="card-body">
+                <div class="instructor-inner">
+                    <h6>Total Needs</h6>
+                    <h4 class="instructor-text-success">7</h4>
+                    <p>From All Over Tunisia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex">
+        <div class="card instructor-card w-100">
+            <div class="card-body">
+                <div class="instructor-inner">
+                    <h6>Needs met</h6>
+                    <h4 class="instructor-text-info">1</h4>
+                    <p>Added by partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex">
+        <div class="card instructor-card w-100">
+            <div class="card-body">
+                <div class="instructor-inner">
+                    <h6>Products</h6>
+                    <h4 class="instructor-text-warning">3</h4>
+                    <p>Out of stock</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <div class="settings-inner-blk p-0">
+                <div class="sell-course-head comman-space">
+                    <h3>List of Needs</h3>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                 
+                                    
+                
+                                    <input [(ngModel)]="searchTxt" type="search" class="form-control" placeholder="Search"
+                                         style="margin: 10px auto; width: 50%;">
+                    </div>
+                
+                    <div style="display: flex; justify-content: space-between; align-items: center;" >  
+                    
+                    <table class="table table-light" id="tableFourn">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                                <th>Adding date</th>
+                                <th>Type</th>
+                                <th>Category</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let f of besoins | besoinoffreFilterPipe:searchTxt | paginate : { itemsPerPage: tableSize, currentPage: page,totalItems: count };let i = index">
+                               
+                                <td>{{f.name_besoin}}</td>
+                                <td>{{f.descr_besoin}}</td>
+                                <td>{{f.status_besoin}}</td>
+                                <td>{{f.date_ajout_besoin}}</td>
+                                <td>{{f.type}}</td>
+                                <td>{{f.category}}</td>
+                                <td>
+                                    <button class="btn btn-warning" style="margin-right: 5px;"
+                                    [routerLink]="['/instructor/instructor-payouts',f.idFourn]">Edit
+                                    </button>
+                
+                                    <button class="btn btn-danger"
+                                    >Delete
+                                    </button>
+                
+                                    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-warning" style="margin-right: 5px;"
+                                    [routerLink]="['/instructor/instructor-social-profiles']">Add New
+                                    </button>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        
+        <pagination-controls 
+    previousLabel="Prev" nextLabel="Next" (pageChange)="onTableDataChange($event)" >
+</pagination-controls>
+<router-outlet></router-outlet>
+

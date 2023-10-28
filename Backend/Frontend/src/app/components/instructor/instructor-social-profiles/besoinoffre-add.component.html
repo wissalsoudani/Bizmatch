@@ -1,0 +1,54 @@
+<div class="container-fluid">
+
+    
+
+    <div class="card" style="width: 50%;margin: 5px auto;">
+        <div class="sell-course-head comman-space">
+            <h3>Add New Need</h3>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input [(ngModel)]="besoin.name_besoin" id="name" name="name" class="form-control" type="text">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="matricule">Description</label>
+                    <input [(ngModel)]="besoin.descr_besoin" id="description" name="description" class="form-control" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Status</label>
+                    <input [(ngModel)]="besoin.status_besoin" id="status" name="status" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Type</label>
+                    <input [(ngModel)]="besoin.type" name="type" id="type" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Category</label>
+                    <input [(ngModel)]="besoin.category" name="category" id="category" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Entreprise</label>
+                    <input [(ngModel)]="besoin.entreprise" name="entreprise" id="entreprise" class="form-control" type="text">
+                </div>
+
+                <button class="btn btn-primary" (click)="saveBesoin()" >Save</button>
+            </form>
+        </div>
+
+        <!-- Alert message when save is successful -->
+        <div class="card-footer" *ngIf="showAlert" >
+            <div class="alert alert-success" >
+                <button type="button" class="btn btn-primary" (click)="closeAlert()" class="close" [routerLink]="['/instructor/instructor-dashboard']">
+                    &times; 
+                </button>
+                <strong>Partner Successfully Saved</strong>
+            </div>
+        </div>
+
+    </div>
+</div>

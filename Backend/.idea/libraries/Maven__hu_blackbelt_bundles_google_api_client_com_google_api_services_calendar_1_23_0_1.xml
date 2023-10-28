@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: hu.blackbelt.bundles.google-api-client:com.google.api-services-calendar:1.23.0_1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/hu/blackbelt/bundles/google-api-client/com.google.api-services-calendar/1.23.0_1/com.google.api-services-calendar-1.23.0_1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/hu/blackbelt/bundles/google-api-client/com.google.api-services-calendar/1.23.0_1/com.google.api-services-calendar-1.23.0_1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/hu/blackbelt/bundles/google-api-client/com.google.api-services-calendar/1.23.0_1/com.google.api-services-calendar-1.23.0_1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

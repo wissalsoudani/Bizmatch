@@ -1,0 +1,65 @@
+<div class="tak-instruct-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="settings-widget">
+                <div class="settings-inner-blk p-0">
+                    <div class="sell-course-head student-meet-head comman-space border-0">
+                        <div class="tak-head d-flex align-items-center">
+                            <div>
+                                <h3>Users</h3>
+                                <p>Meet your people.</p>
+                            </div>
+                            <div class="view-icons">
+                                <a [routerLink]="routes.instructor_student_grid" class="grid-view active"><i-feather name="grid"></i-feather></a>
+                           
+                            </div>
+                        </div>
+                        <form>
+                            <div class="student-search-form d-flex ">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" placeholder="Twitter Profile Name">
+                                </div>
+                                <div class="export-cvv-btn">
+                                     
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6 d-flex" *ngFor="let data of users">
+            <div class="student-box flex-fill">
+                <div class="student-box-blks">
+                    <div class="message-text-img">
+                        <a href="javascript:;">
+                            <img class="img-fluid" alt="Students Info" src="assets/img/icon/message-text.svg">
+                        </a>
+                    </div>
+                   
+                    <div class="student-content pb-0">
+                        <h5><a [routerLink]="routes.students_profile">{{data.email}}</a></h5>
+                        <div class="loc-blk d-flex align-items-center justify-content-center">
+                            <i-feather name="map-pin" class="me-2 feather-map"></i-feather>
+                            <p>{{data.role}} {{data.job}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="enrol-student-foot">
+                    <ul>
+                        <li>{{data.firstName}} <span>{{data.lastName}}</span></li>
+                        <li>{{data.tel}}</li>
+                         
+                        <li>   <button class="btn btn-primary" *ngIf="!data.active" (click)="unbanUser(data.email)">Unban User</button> 
+                               <button class="btn btn-primary" *ngIf="data.active" (click)="banUser(data.email)">Ban User</button></li>
+                                <li>   <button class="btn btn-primary" (click)="delete(data.email)">Delete User</button>      </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</div>

@@ -1,0 +1,118 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-bar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div class="breadcrumb-list">
+                    <nav aria-label="breadcrumb" class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page">Company</li>
+                            <li class="breadcrumb-item active" aria-current="page">Company Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadcrumb -->
+<!-- Profile Info -->
+<div class="page-banner student-bg-blk">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+              <div class="profile-info-blk">
+                <a href="javascript:;" class="profile-info-img">
+                    <img src="assets/img/students/entreprise.jpeg" alt="Profile Avatar" class="img-fluid">
+                </a>
+
+                <h4 style="color: #000080;">Representative Name:</h4> <p style="color: #ffffff;">{{entreprise.nom}}</p>
+                <br>
+                <h4 style="color: #000080;">Adress:</h4> <p style="color: #ffffff;">{{entreprise.adresse}}</p>
+                <br>
+                <h3 style="color: #000080;">Sector of Activity: <p style="color: #ffffff;">{{entreprise.secteur}}</p></h3>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Profile Info -->
+
+<!-- Overview -->
+<div class="card overview-sec">
+    <div class="card-body">
+        <h5 class="subs-title">About us</h5>
+        <p>{{entreprise.description}}</p>
+    </div>
+</div>
+<!-- /Overview -->
+
+<!-- Besoin Commercial -->
+<div class="card mb-4">
+    <div class="card-body">
+        <h5 class="subs-title">Commercial Needs </h5>
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-primary" (click)="addBesoin()">New</button>
+        </div>
+        <div class="list-group">
+                <ng-container *ngFor="let besoin of besoinCommercials">
+                    <div class="list-group-item">
+                        <label class="list-label">Besoin Commercial:</label>
+                        <h5 class="mb-1">{{besoin.titre}}</h5>
+                        <label class="list-label">Description:</label>
+                        <p class="mb-0">{{besoin.description}}</p>
+                    </div>
+                </ng-container>
+
+        </div>
+    </div>
+</div>
+<!-- /Besoin Commercial -->
+
+
+
+<!-- Service Commercial -->
+<!-- Service Commercial -->
+<div class="card service-commercial-card">
+    <div class="card-body">
+      <h5 class="subs-title">Commercial Services </h5>
+      <div class="d-flex justify-content-end mb-3">
+          <button class="btn btn-primary" (click)="addService()">New</button>
+      </div>
+        <div class="service-list">
+            <ng-container *ngFor="let service of serviceCommercials">
+                <div class="service-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="service-details">
+                            <div class="service-item">
+                                <label class="service-label">Service Name:</label>
+                                <h5 class="service-title">{{service.nomservice}}</h5>
+                                <label class="service-label">Probleme:</label>
+                                <p class="service-problemes">{{service.problemeservice}}</p>
+                                <label class="service-label">Description:</label>
+                                <p class="service-description">{{service.description}}</p>
+                            </div>
+
+                            <!-- Add more service items with labels here -->
+                        </div>
+
+                    </div>
+                    <div class="service-rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star me-1"></i>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
+<!-- /Service Commercial -->
+
+<!-- /Service Commercial -->
+
+
+<!-- /Service Commercial -->

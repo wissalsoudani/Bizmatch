@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/CRM/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CRM/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CalendrierMicroservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CalendrierMicroservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GestionReclamationMicroservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GestionReclamationMicroservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrestationServices/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrestationServices/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Reclamation/GestionReclamationMicroservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Reclamation/GestionReclamationMicroservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Relations/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Relations/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authentification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authentification-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/besoins-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/besoins-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/business-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/business-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/calendar-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/calendar-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/conference-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/conference-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/event-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/event-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gestionMarche/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gestionMarche/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gestionPartenariat/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reunion-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reunion-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
