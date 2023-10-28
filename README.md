@@ -11,7 +11,7 @@ This project aims to create a comprehensive platform that strengthens B2B busine
 - **Enhanced B2B Networking**: Foster stronger connections between businesses for mutual growth and collaboration.
 - **Facilitated Business Expansion**: Streamline the process of expanding business activities.
 - **Access to New Opportunities**: Provide a gateway to explore and seize new business opportunities.
-- 
+  
 ## Technologies
 
 - Frontend: Angular
